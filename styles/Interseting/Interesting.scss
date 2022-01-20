@@ -1,0 +1,377 @@
+.interesting {
+  background: #E0DEDE;
+
+  
+    .interestingH2 {
+      font-size: 30px;
+      font-weight: 600;
+      color: #c70100;
+    }
+
+    a {
+      text-decoration: none;
+      color: #45495E;
+      padding: 6px 20px;
+      border: 1px solid #45495E;
+      border-radius: 40px;
+      transition: .3s ease;
+      z-index: 999;
+      left: 71%;
+      font-size: 14px;
+      position: absolute;
+
+      &:hover {
+        cursor: pointer;
+        border-color: #0045b2;
+        transform: scale(1.1);
+        background: #0045b2;
+        color: white;
+      }
+    }
+  
+
+  .slick-slider {
+    overflow: hidden;
+    position: relative;
+
+    .slick-next {
+      position: absolute;
+      right: 30px !important;
+      font-size: 0;
+      width: 30px !important;
+      height: 30px;
+      top: 16px;
+      box-sizing: border-box;
+      border-radius: 60px;
+      color: #E0DEDE;
+      ;
+    }
+
+
+    .slick-prev {
+      position: absolute;
+      font-size: 0;
+      width: 30px !important;
+      height: 30px;
+      left: 90%;
+      box-sizing: border-box;
+      border-radius: 60px;
+      z-index: 99;
+      top: 16px;
+    }
+
+    .slick-list {
+      .slick-track {
+        display: flex;
+
+        .slick-slide {
+          display: flex;
+          flex-direction: column;
+          margin: 50px 10px;
+          background: #FFFFFF;
+          box-shadow: -10px -10px 60px rgba(68, 68, 68, 0.06), 6px 10px 60px rgba(68, 68, 68, 0.06);
+          border-radius: 10px;
+
+          div {
+            .item {
+              .card-img {
+                img {
+                  width: 100%;
+                  height: 170px;
+                  object-fit: cover;
+                }
+
+                iframe {
+                  width: 100%;
+                  height: 170px;
+                  object-fit: cover;
+                }
+              }
+
+              .bottom-card {
+                padding: 10px 20px;
+
+                span {
+                  margin-bottom: 10px;
+                }
+
+                h2 {
+                  margin: 10px 0;
+                }
+
+                h4 {
+                  font-size: 20px;
+                  padding: 10px 0;
+                  font-weight: 500;
+                  line-height: 21px;
+                  letter-spacing: 1px;
+
+                  &:hover {
+                    cursor: pointer;
+                    color: crimson;
+                  }
+                }
+
+                .bottom {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  margin-top: 20px;
+
+                  .p1 {
+                    padding: 5px 0;
+                    font-size: 12px;
+
+                  }
+
+                  .box {
+                    display: flex;
+                    align-items: center;
+
+                    p {
+                      margin-left: 5px;
+                      font-size: 12px;
+                    }
+                  }
+                }
+              }
+            }
+
+            .bottom-card {
+              h4 {
+                width: 100% !important;
+                height: 140px !important;
+              }
+            }
+          }
+
+        }
+      }
+    }
+
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .interesting {
+    a {
+      left: 65%;
+    }
+
+    .slick-slider {
+      .slick-prev {
+        left: 86%;
+      }
+    }
+
+    .item {
+      .card-img {
+        iframe {
+          width: 210px !important;
+          height: 137px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 992px) {
+  .interesting {
+    a {
+      left: 65%;
+    }
+
+    .slick-slider {
+      .slick-prev {
+        left: 86%;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .interesting {
+    a {
+      left: 65%;
+    }
+
+    .slick-slider {
+      .slick-prev {
+        left: 86%;
+      }
+    }
+
+    .item {
+      .card-img {
+        img {
+          width: 210px !important;
+          height: 137px;
+        }
+        iframe {
+          width: 210px !important;
+          height: 137px;
+        }
+      }
+    }
+
+    .slick-slider {
+      .slick-list {
+        .slick-track {
+          .slick-slide {
+            div {
+              .item {
+                .bottom-card {
+                  padding: 10px;
+                  height: 220px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .interesting {
+    .interestingH2 {
+      font-size: 24px;
+    }
+
+    a {
+      left: 50%;
+      font-size: 12px;
+    }
+
+    .item {
+      .card-img {
+        img {
+          width: 240px !important;
+          height: 137px;
+        }
+        iframe {
+          width: 240px !important;
+          height: 137px;
+        }
+      }
+    }
+
+    .slick-slider {
+      .slick-prev {
+        left: 79%;
+        width: 30px;
+        height: 30px;
+      }
+
+      .slick-next {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .interesting {
+    padding-bottom: 30px;
+    .interestingH2 {
+      font-size: 24px;
+      padding-top: 20px;
+    }
+
+    a {
+      left: 10%;
+      font-size: 12px;
+      margin-top: 119%;
+    }
+
+    .slick-slider {
+      .slick-prev {
+        width: 25px !important;
+        height: 25px;
+        left: 69%;
+        margin-top: 130%;
+      }
+
+      .slick-next {
+        width: 25px !important;
+        height: 25px;
+        margin-top: 130%;
+        right: 25px !important;
+      }
+    }
+    .slick-slider {
+      .slick-list {
+        .slick-track {
+          .slick-slide {
+            div {
+              .item {
+                .bottom-card {}
+
+                .card-img {
+                  img {
+                    width: 100% !important;
+
+                    height: 200px !important;
+                    object-fit: cover;
+                  }
+
+                  iframe {
+                    width: 270px !important;
+                    height: 200px !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 375px) {
+  .interesting {
+    .interestingH2 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    a {
+      left: 10%;
+      font-size: 12px;
+      margin-top: 130%;
+    }
+
+    .item {
+      .card-img {
+        iframe {
+          width: 318px !important;
+          height: 167px;
+        }
+      }
+    }
+
+   
+
+    .slick-slider {
+      .slick-prev {
+        width: 25px !important;
+        height: 25px;
+        left: 69%;
+        margin-top: 143%;
+      }
+
+      .slick-next {
+        width: 25px !important;
+        height: 25px;
+        margin-top: 143%;
+      }
+    }
+  }
+}

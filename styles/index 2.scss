@@ -1,0 +1,94 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+@import "./Header/Header";
+@import "./Hero/Mein-news-list";
+@import "./Hero/Main-news";
+@import "./Hero/Main-vide";
+@import "./Footer/Footer";
+@import "./Region/Region";
+@import "./Most-read/Most-read";
+@import "./Interseting/Interesting";
+@import "./First-post/First-post";
+@import "Posts/Interesting-post";
+@import "Posts/Most-read-post";
+@import "Post-pages/Post-pages-inter";
+@import "Post-pages/Post-page-most";
+@import "Hero/modal";
+@import "Adversting/ advertising";
+@import "Search/Search";
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a, a:hover{
+  text-decoration: none;
+}
+
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: #ffffff;
+}
+
+.container{
+  width: 1170px;
+  margin: 0 auto;
+}
+
+
+//Media 1024px
+
+@media (max-width: 1024px) {
+  .container{
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+//Media 992px
+
+@media (max-width: 992px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+// Media 768px
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+// Media 576px
+@media (max-width: 576px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+// Media 414px
+
+@media (max-width: 414px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+// Media 375px
+@media (max-width: 375px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

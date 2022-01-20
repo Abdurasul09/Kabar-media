@@ -1,0 +1,121 @@
+.ReactModal__Content{
+  width: 470px;
+  height: 260px;
+  background: #0045b2 !important;
+  border-radius: 10px;
+}
+.ReactModalPortal{
+  .ReactModal__Overlay{
+    .ReactModal__Content{
+      i{
+        color: #FFFFFF;
+      }
+      div{
+        h3{
+          color: #FFFFFF;
+          font-size: 20px;
+          margin: 20px 0;
+        }
+        .react-share__ShareButton{
+          svg{
+            width: 60px !important;
+            height: 60px !important;
+            font-size: 40px;
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+.modal{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  input{
+    width: 75%;
+    margin: 30px 0 10px 0;
+    padding: 10px;
+    color: #FFFFFF;
+    background: #45495D;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+  }
+  button{
+    margin: 30px 0 10px 0;
+    padding: 10px;
+    background: #45495D;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  span{
+    img{
+      width: 15px !important;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 414px) {
+  .ReactModal__Content{
+    width: 370px;
+    height: 260px;
+    background: #0045b2 !important;
+    border-radius: 10px;
+  }
+  .ReactModalPortal{
+    .ReactModal__Overlay{
+      .ReactModal__Content{
+        div{
+          .react-share__ShareButton{
+            svg{
+              width: 40px !important;
+              height: 40px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .modal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    input{
+      width: 65%;
+      margin: 40px 0 10px 0;
+      padding: 7px;
+
+    }
+    button{
+      margin: 40px 0 10px 0;
+      padding: 7px;
+
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    span{
+      img{
+        width: 15px !important;
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 375px) {
+  .ReactModal__Content{
+    width: 350px;
+    height: 260px;
+  }
+}
