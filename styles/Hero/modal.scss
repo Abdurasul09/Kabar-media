@@ -10,20 +10,38 @@
       i{
         color: #FFFFFF;
       }
+      h3{
+        color: #FFFFFF;
+        font-size: 20px;
+        margin: 20px 0;
+      }
       div{
-        h3{
-          color: #FFFFFF;
-          font-size: 20px;
-          margin: 20px 0;
-        }
-        .react-share__ShareButton{
-          svg{
-            width: 60px !important;
-            height: 60px !important;
-            font-size: 40px;
-            margin-left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        //.medias{
+          .react-share__ShareButton{
+            svg{
+              width: 60px !important;
+              height: 60px !important;
+              font-size: 34px;
+              margin-left: 20px;
+            }
           }
-        }
+          .st-inline-follow-buttons{
+            .st-bottom{
+              font-size: 0 !important;
+            }
+            .st-btn{
+              img{
+                width: 40px !important;
+                height: 40px;
+                font-size: 40px !important;
+              }
+            }
+          }
+        //}
       }
     }
   }

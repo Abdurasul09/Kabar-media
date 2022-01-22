@@ -80,34 +80,41 @@ const MostRead = () => {
         <section id="most-read">
             <div className="container">
                 <h2 className='mostRead'> Эң окумдуу </h2>
-                <Link href={`/mostreading-posts`}>Кененирээк</Link>
-                <Slider {...settings}>
-                    {mostPosts ? (
-                        mostPosts.map((item) => (
-                            <div className="item" key={item.id}>
-                                <div className="card-img">
-                                    {outMedia(item)}
-                                </div>
-                                <div className="bottom-card">
-                                    <span>{item.region}</span>
-                                    <Link href={`/article/[id]`} as={`/article/${item.id}`}>
-                                        <h4>{item.title.substr(0, 80)}</h4>
-                                    </Link>
-                                    <div className="bottom">
-                                        <p className='p1'>{item.created.substr(0, 10)}</p>
-                                        <div className='box'>
-                                            <i className="far fa-eye"/>
-                                            <p>{item.viewed}</p></div>
-                                        <ModalContent/>
+                <div className="linkMost">
+                    <Link href={`/mostreading-posts`}>Кененирээк</Link>
+                </div>
+                <div className="mostSlider">
+                    <Slider {...settings}>
+                        {mostPosts ? (
+                            mostPosts.map((item) => (
+                                <div className="item" key={item.id}>
+                                    <div className="card-img">
+                                        {outMedia(item)}
+                                    </div>
+                                    <div className="bottom-card">
+                                        <span>{item.region}</span>
+                                        <Link href={`/article/[id]`} as={`/article/${item.id}`}>
+                                            <h4>{item.title.substr(0, 80)}</h4>
+                                        </Link>
+                                        <div className="bottom">
+                                            <p className='p1'>{item.created.substr(0, 10)}</p>
+                                            <div className='box'>
+                                                <i className="far fa-eye"/>
+                                                <p>{item.viewed}</p></div>
+                                            <ModalContent/>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        ))
-                    ) : (
-                        <h2>Жүктөө</h2>
-                    )}
-                </Slider>
+                            ))
+                        ) : (
+                            <h2>Жүктөө</h2>
+                        )}
+                    </Slider>
+                    <div className="linkMost1">
+                        <Link href={`/mostreading-posts`}>Кененирээк</Link>
+                    </div>
 
+                </div>
                 <style jsx global>
                     {`
                       .slick-prev {
@@ -127,7 +134,6 @@ const MostRead = () => {
                         font-size: 30px;
                         color: rgba(69, 73, 93, 0.68) !important;
                       }
-
                     `}
                 </style>
             </div>

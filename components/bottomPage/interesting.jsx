@@ -76,36 +76,43 @@ const Interesting = () => {
             <div className="container">
 
                 <h2 className="interestingH2">Эң кызыктуу </h2>
-                <Link href={`/interesting-posts`}>Кененирээк</Link>
+                <div className="linkMost">
+                    <Link href={`/interesting-posts`}>Кененирээк</Link>
+                </div>
+                <div className="mostSlider">
+                    <Slider {...settings}>
+                        {interestingPosts ? (
+                            interestingPosts.map((item) => (
+                                <div className="item" key={item.id}>
+                                    <div className="card-img">
+                                        {outMedia(item)}
 
-                <Slider {...settings}>
-                    {interestingPosts ? (
-                        interestingPosts.map((item) => (
-                            <div className="item" key={item.id}>
-                                <div className="card-img">
-                                    {outMedia(item)}
-
-                                </div>
-                                <div className="bottom-card">
-                                    <span>{item.region}</span>
-                                    <Link href={`/article/[id]`} as={`/article/${item.id}`}>
-                                        <h4>{item.title.substr(0, 80)}</h4>
-                                    </Link>
-                                    <div className="bottom">
-                                        <p className='p1'>{item.created.substr(0, 10)}</p>
-                                        <div className='box'>
-                                            <i className="far fa-eye"/>
-                                            <p>{item.viewed}</p>
+                                    </div>
+                                    <div className="bottom-card">
+                                        <span>{item.region}</span>
+                                        <Link href={`/article/[id]`} as={`/article/${item.id}`}>
+                                            <h4>{item.title.substr(0, 80)}</h4>
+                                        </Link>
+                                        <div className="bottom">
+                                            <p className='p1'>{item.created.substr(0, 10)}</p>
+                                            <div className='box'>
+                                                <i className="far fa-eye"/>
+                                                <p>{item.viewed}</p>
+                                            </div>
+                                            <ModalContent/>
                                         </div>
-                                        <ModalContent/>
                                     </div>
                                 </div>
-                            </div>
-                        ))
-                    ) : (
-                        <h2>Жүктөө</h2>
-                    )}
-                </Slider>
+                            ))
+                        ) : (
+                            <h2>Жүктөө</h2>
+                        )}
+                    </Slider>
+                    <div className="linkMost1">
+                        <Link href={`/interesting-posts`}>Кененирээк</Link>
+                    </div>
+                </div>
+
                 <style jsx global>
                     {`
                       .slick-prev:before {

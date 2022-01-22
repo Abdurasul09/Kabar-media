@@ -59,7 +59,7 @@ const ModalContent = () => {
         setIsOpen(false);
     }
 
-   const shareUrl="https://www.youtube.com/watch?v=4t1y5dC6WxY"
+    const shareUrl = "https://www.youtube.com/watch?v=4t1y5dC6WxY"
     return (
 
         <div className='modal'>
@@ -73,53 +73,50 @@ const ModalContent = () => {
             >
 
                 <i className="fas fa-times closeIcon" onClick={closeModal}/>
+                <h3>Поделиться</h3>
+
                 <div>
-                    <h3>Поделиться</h3>
-                    <FacebookShareButton
-                        url={shareUrl}
-                        className="Demo__some-network__share-button"
-                    >
-                        <FacebookIcon size={32} round />
-                    </FacebookShareButton>
-                    <WhatsappShareButton
-                        url={shareUrl}
-                        className="Demo__some-network__share-button"
-                    >
-                        <WhatsappIcon size={32} round />
-                    </WhatsappShareButton>
+                    {/*<div className="medias">*/}
+                        <FacebookShareButton
+                            url={shareUrl}
+                            className="Demo__some-network__share-button"
+                        >
+                            <FacebookIcon size={32} round/>
+                        </FacebookShareButton>
 
-                    <TelegramShareButton
-                        url={shareUrl}
-                        className="Demo__some-network__share-button"
-                    >
-                        <TelegramIcon/>
-                    </TelegramShareButton>
-                    {/*<InstagramShareButton*/}
-                    {/*    url={shareUrl}*/}
-                    {/*    className="Demo__some-network__share-button"*/}
-                    {/*>*/}
-                    {/*    <InstapaperIcon/>*/}
-                    {/*</InstagramShareButton>*/}
+                        <WhatsappShareButton
+                            url={shareUrl}
+                            className="Demo__some-network__share-button"
+                        >
+                            <WhatsappIcon size={32} round/>
+                        </WhatsappShareButton>
 
-                    <InlineFollowButtons
-                        config={{
-                            action_enable: true,
-                            action_pos: 'bottom',
-                            alignment: 'center',
-                            enabled: true,
-                            networks: [
-                                'instagram',
-                            ],
-                            padding: 8,
-                            profiles: {
-                                instagram: 'kabar_media__',
-                            },
-                            radius: 9,
-                            size: 42,
-                            spacing: 8
-                        }}
-                    />
+                        <TelegramShareButton
+                            url={shareUrl}
+                            className="Demo__some-network__share-button"
+                        >
+                            <TelegramIcon/>
+                        </TelegramShareButton>
 
+                        <InlineFollowButtons
+                            config={{
+                                action_enable: true,
+                                action_pos: 'bottom',
+                                alignment: 'center',
+                                enabled: true,
+                                networks: [
+                                    'instagram',
+                                ],
+                                padding: 8,
+                                profiles: {
+                                    instagram: 'kabar_media__',
+                                },
+                                radius: 9,
+                                size: 42,
+                                spacing: 8
+                            }}
+                        />
+                    {/*</div>*/}
                 </div>
                 <div className='modal'>
                     <input type="text" value="https://www.youtube.com/watch?v=4t1y5dC6WxY"/>
