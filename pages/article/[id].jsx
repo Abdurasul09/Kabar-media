@@ -78,11 +78,15 @@ export default function Post({onePost}) {
                 />)
         } else if (item.media && item.media.file) {
             return (
-                <img src={item.media.thumbnail} alt="Med"/>
+                <div className='blockImg'>
+                    <img src={item.media.thumbnail} alt="Med"/>
+                </div>
             )
         }
         return (
-            <img src={item.images[0].image} alt="Med"/>
+            <div className='blockImg'>
+                <img src={item.images[0].image} alt="Med"/>
+            </div>
         )
     }
 

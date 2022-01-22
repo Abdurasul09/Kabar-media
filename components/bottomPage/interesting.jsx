@@ -46,8 +46,8 @@ const Interesting = () => {
     };
 
     const outMedia = (item) => {
-        if(item.media){
-            if(item.media.video){
+        if (item.media) {
+            if (item.media.video) {
                 return (
                     <iframe
                         width="275"
@@ -60,14 +60,20 @@ const Interesting = () => {
                     />
                 )
             }
-            if(item.media.file){
+            if (item.media.file) {
                 return (
-                    <img src={item.media.thumbnail} alt="Med"/>
+                    <div className='blockImg'>
+                        <img src={item.media.thumbnail} alt="Med"/>
+                    </div>
                 )
             }
             return null;
-        }else{
-            return <img src={item.images[0].image} alt="Med"/>
+        } else {
+            return (
+                <div className='blockImg'>
+                    <img src={item.images[0].image} alt="Med"/>
+                </div>
+            )
         }
     }
 
@@ -86,21 +92,20 @@ const Interesting = () => {
                                 <div className="item" key={item.id}>
                                     <div className="card-img">
                                         {outMedia(item)}
-
                                     </div>
                                     <div className="bottom-card">
                                         <span>{item.region}</span>
                                         <Link href={`/article/[id]`} as={`/article/${item.id}`}>
                                             <h4>{item.title.substr(0, 80)}</h4>
                                         </Link>
-                                        <div className="bottom">
-                                            <p className='p1'>{item.created.substr(0, 10)}</p>
-                                            <div className='box'>
-                                                <i className="far fa-eye"/>
-                                                <p>{item.viewed}</p>
-                                            </div>
-                                            <ModalContent/>
+                                    </div>
+                                    <div className="bottom">
+                                        <p className='p1'>{item.created.substr(0, 10)}</p>
+                                        <div className='box'>
+                                            <i className="far fa-eye"/>
+                                            <p>{item.viewed}</p>
                                         </div>
+                                        <ModalContent/>
                                     </div>
                                 </div>
                             ))

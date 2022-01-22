@@ -195,6 +195,17 @@
   }
 }
 
+@media (max-width: 390px) {
+  .main-news {
+    .main-video {
+      a {
+        h1 {
+          margin-top: -32% !important;
+        }
+      }
+    }
+  }
+}
 
 @media (max-width: 375px) {
   .main-news {

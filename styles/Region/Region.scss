@@ -172,10 +172,41 @@
   }
 }
 
+@media (max-width: 390px) {
+  .region {
+    margin-top: 60%;
+    .regionContent {
+      form {
+        .firstContent {
+          display: grid;
+          grid-template-columns: 40% 40% 40% 40% 40% 40% 40%;
+          overflow-y: scroll;
+
+          label {
+            padding: 8px 5px;
+            text-align: center;
+            font-size: 12px;
+            margin: 3px;
+          }
+        }
+        .secondContent {
+          margin-left: 0;
+          label {
+            padding: 8px 20px;
+            font-size: 12px;
+            margin-right: 10px;
+          }
+
+        }
+      }
+    }
+
+  }
+}
 
 @media (max-width: 375px) {
   .region {
-    margin-top: 80%;
+    margin-top: 90%;
     .regionContent {
       form {
       .firstContent {
