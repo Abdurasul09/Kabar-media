@@ -7,9 +7,9 @@
     overflow-y: scroll;
     background: #ffffff;
     box-shadow: -10px -10px 60px rgba(68, 68, 68, 0.06),
-      6px 10px 60px rgba(68, 68, 68, 0.06);
+    6px 10px 60px rgba(68, 68, 68, 0.06);
     border-radius: 10px;
-    height: 70vh;
+    height: 100%;
     padding: 10px 20px;
 
     .newsItem {
@@ -53,7 +53,7 @@
 
               &:hover {
                 cursor: pointer;
-                color: crimson;
+                color: #f39453;
               }
             }
           }
@@ -150,7 +150,7 @@
     .MainNewsList {
       width: 90%;
       position: absolute;
-      margin-top: 75%;
+      margin-top: 60%;
       height: 500px;
       padding: 0;
       border-radius: 0;
@@ -191,7 +191,7 @@
 @media (max-width: 576px) {
   .main-news {
     .MainNewsList {
-      margin-top: 78%;
+      margin-top: 60%;
       height: 400px;
 
       .newsItem {
@@ -227,7 +227,7 @@
 @media (max-width: 414px) {
   .main-news {
     .MainNewsList {
-      margin-top: 80%;
+      margin-top: 70%;
       height: 550px;
 
       .newsItem {
@@ -270,6 +270,15 @@
   .main-news {
     .MainNewsList {
       margin-top: 80%;
+      height: 400px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .main-news {
+    .MainNewsList {
+      margin-top: 90%;
       height: 400px;
     }
   }

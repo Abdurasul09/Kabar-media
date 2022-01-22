@@ -36,7 +36,9 @@ export default function MainNewsVideo() {
                     <div key={item.id}>
                         <Slider {...settings}>
                             {item.images.map(el => (
-                                <img src={el.image} alt="img" className='bannerImg'/>
+                                <div className="bannerImgSlider">
+                                    <img src={el.image} alt="img" className='bannerImg'/>
+                                </div>
                             ))}
                         </Slider>
                         <Link href={`/article/${item.id}`} key={item.id}>

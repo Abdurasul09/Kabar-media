@@ -1,4 +1,4 @@
-.interesting {
+#most-read {
   background: #E0DEDE;
 
   
@@ -8,57 +8,11 @@
       color: #c70100;
     }
 
-    a {
-      text-decoration: none;
-      color: #45495E;
-      padding: 6px 20px;
-      border: 1px solid #45495E;
-      border-radius: 40px;
-      transition: .3s ease;
-      z-index: 999;
-      left: 71%;
-      font-size: 14px;
-      position: absolute;
-
-      &:hover {
-        cursor: pointer;
-        border-color: #0045b2;
-        transform: scale(1.1);
-        background: #0045b2;
-        color: white;
-      }
-    }
-
 
   .slick-slider {
     overflow: hidden;
     position: relative;
 
-    .slick-next {
-      position: absolute;
-      right: 30px !important;
-      font-size: 0;
-      width: 30px !important;
-      height: 30px;
-      top: 16px;
-      box-sizing: border-box;
-      border-radius: 60px;
-      color: #E0DEDE;
-      ;
-    }
-
-
-    .slick-prev {
-      position: absolute;
-      font-size: 0;
-      width: 30px !important;
-      height: 30px;
-      left: 90%;
-      box-sizing: border-box;
-      border-radius: 60px;
-      z-index: 99;
-      top: 16px;
-    }
 
     .slick-list {
       .slick-track {
@@ -154,17 +108,7 @@
 
 
 @media (max-width: 1024px) {
-  .interesting {
-    a {
-      left: 65%;
-    }
-
-    .slick-slider {
-      .slick-prev {
-        left: 86%;
-      }
-    }
-
+  #most-read {
     .item {
       .card-img {
         iframe {
@@ -178,31 +122,14 @@
 
 
 @media (max-width: 992px) {
-  .interesting {
-    a {
-      left: 65%;
-    }
 
-    .slick-slider {
-      .slick-prev {
-        left: 86%;
-      }
-    }
-  }
 }
 
 
 @media (max-width: 768px) {
-  .interesting {
-    a {
-      left: 65%;
-    }
+  #most-read {
 
-    .slick-slider {
-      .slick-prev {
-        left: 86%;
-      }
-    }
+
 
     .item {
       .card-img {
@@ -237,16 +164,7 @@
 }
 
 @media (max-width: 576px) {
-  .interesting {
-    .interestingH2 {
-      font-size: 24px;
-    }
-
-    a {
-      left: 50%;
-      font-size: 12px;
-    }
-
+  #most-read {
     .item {
       .card-img {
         img {
@@ -259,51 +177,22 @@
         }
       }
     }
-
-    .slick-slider {
-      .slick-prev {
-        left: 79%;
-        width: 30px;
-        height: 30px;
-      }
-
-      .slick-next {
-        width: 30px;
-        height: 30px;
-      }
-    }
   }
 }
 
+@media (max-width: 425px) {
+
+}
+
 @media (max-width: 414px) {
-  .interesting {
+  #most-read {
     padding-bottom: 30px;
     .interestingH2 {
       font-size: 24px;
       padding-top: 20px;
     }
 
-    a {
-      left: 10%;
-      font-size: 12px;
-      margin-top: 119%;
-    }
 
-    .slick-slider {
-      .slick-prev {
-        width: 25px !important;
-        height: 25px;
-        left: 69%;
-        margin-top: 130%;
-      }
-
-      .slick-next {
-        width: 25px !important;
-        height: 25px;
-        margin-top: 130%;
-        right: 25px !important;
-      }
-    }
     .slick-slider {
       .slick-list {
         .slick-track {
@@ -336,42 +225,32 @@
 
 
 @media (max-width: 375px) {
-  .interesting {
+  #most-read {
+
     .interestingH2 {
       font-size: 24px;
       margin: 0;
     }
 
-    a {
-      left: 10%;
-      font-size: 12px;
-      margin-top: 130%;
-    }
+
 
     .item {
       .card-img {
+        img {
+          width: 318px !important;
+          height: 167px;
+        }
         iframe {
           width: 318px !important;
           height: 167px;
         }
       }
     }
+  }
+}
 
-   
+@media (max-width: 320px) {
+  #interesting{
 
-    .slick-slider {
-      .slick-prev {
-        width: 25px !important;
-        height: 25px;
-        left: 69%;
-        margin-top: 143%;
-      }
-
-      .slick-next {
-        width: 25px !important;
-        height: 25px;
-        margin-top: 143%;
-      }
-    }
   }
 }

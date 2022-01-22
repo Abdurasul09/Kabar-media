@@ -70,10 +70,36 @@
 }
 
 @media (max-width: 768px) {
-  .header .headerContent .navbar .navbar__search {
-    width: 321px;
-  }
+  .header {
+    .headerContent {
+      .navbar {
+        .navbar__search {
+          width: 321px;
 
+        }
+      }
+    }
+  }
+  .category {
+    width: 100%;
+    form {
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25% 25% 25%;
+      width: 100%;
+      height: auto;
+      padding:5px 0;
+      overflow-x: scroll;
+      label {
+        color: #45495E;
+        padding: 8px 20px;
+        border: 1px solid #45495E;
+        border-radius: 40px;
+        margin: 10px;
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+  }
 
 }
 
@@ -103,19 +129,6 @@
     form {
       display: grid;
       grid-template-columns: 30% 30% 30% 30% 30% 30%;
-      width: 100%;
-      height: auto;
-      padding:5px 0;
-      overflow-x: scroll;
-      label {
-        color: #45495E;
-        padding: 8px 20px;
-        border: 1px solid #45495E;
-        border-radius: 40px;
-        margin: 10px;
-        font-size: 14px;
-        text-align: center;
-      }
     }
   }
 

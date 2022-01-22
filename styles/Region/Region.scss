@@ -94,6 +94,7 @@
 
 @media (max-width: 768px) {
   .region {
+    margin-top: 70%;
     .regionContent {
       form {
         .firstContent {
@@ -113,6 +114,7 @@
 
 @media (max-width: 576px) {
   .region {
+    margin-top: 60%;
     .regionContent {
       form {
         .firstContent {
@@ -142,7 +144,8 @@
 
 @media (max-width: 414px) {
   .region {
-      .regionContent {
+    margin-top: 100%;
+    .regionContent {
         form {
         .firstContent {
           display: grid;
@@ -172,6 +175,7 @@
 
 @media (max-width: 375px) {
   .region {
+    margin-top: 80%;
     .regionContent {
       form {
       .firstContent {

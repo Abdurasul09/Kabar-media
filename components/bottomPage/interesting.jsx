@@ -72,14 +72,14 @@ const Interesting = () => {
     }
 
     return (
-        <div className="interesting">
+        <section id="most-read">
             <div className="container">
 
                 <h2 className="interestingH2">Эң кызыктуу </h2>
                 <div className="linkMost">
                     <Link href={`/interesting-posts`}>Кененирээк</Link>
                 </div>
-                <div className="mostSlider">
+                <div className="mostSlider mostSliderBottom">
                     <Slider {...settings}>
                         {interestingPosts ? (
                             interestingPosts.map((item) => (
@@ -131,7 +131,7 @@ const Interesting = () => {
                     `}
                 </style>
             </div>
-        </div>
+        </section>
     );
 };
 
