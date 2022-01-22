@@ -19,6 +19,7 @@
     transition: .3s ease;
     margin-right: 12%;
     z-index: 999;
+
     &:hover {
       cursor: pointer;
       border-color: #0045b2;
@@ -27,16 +28,19 @@
       color: white;
     }
   }
-  .mostSlider{
+
+  .mostSlider {
     margin-top: -2.5%;
     z-index: 3;
   }
-  .linkMost{
+
+  .linkMost {
     width: 100%;
     position: relative;
     display: flex;
     justify-content: flex-end;
   }
+
   .slick-slider {
     overflow: hidden;
     position: relative;
@@ -52,6 +56,7 @@
       z-index: 99;
       top: 16px;
     }
+
     .slick-next {
       position: absolute;
       right: 29px !important;
@@ -112,7 +117,7 @@
 
                   &:hover {
                     cursor: pointer;
-                    color: crimson;
+                    color: #f39453;
                   }
                 }
 
@@ -120,7 +125,6 @@
                   display: flex;
                   align-items: center;
                   justify-content: space-between;
-                  margin-top: 20px;
 
                   .p1 {
                     padding: 5px 0;
@@ -140,13 +144,6 @@
                 }
               }
             }
-
-            .bottom-card {
-              h4 {
-                width: 100% !important;
-                height: 150px !important;
-              }
-            }
           }
 
         }
@@ -163,9 +160,11 @@
     a {
       margin-right: 15%;
     }
-    .mostSlider{
+
+    .mostSlider {
       margin-top: -3%;
     }
+
     .slick-slider {
       .slick-prev {
         left: 86%;
@@ -190,9 +189,10 @@
 
 @media (max-width: 768px) {
   #most-read {
-    .mostSlider{
+    .mostSlider {
       margin-top: -4%;
     }
+
     .slick-slider {
       .slick-list {
         .slick-track {
@@ -215,61 +215,70 @@
     }
   }
 }
-.linkMost1{
+
+.linkMost1 {
   display: none;
 }
+
 @media (max-width: 576px) {
   #most-read {
     .mostRead {
       font-size: 24px;
     }
-    & a{
+
+    & a {
       margin-right: 25%;
       margin-top: -6%;
     }
-    .linkMost{
+
+    .linkMost {
       display: none;
     }
-    .linkMost1{
+
+    .linkMost1 {
       width: 100%;
       position: relative;
       display: flex;
       justify-content: flex-end;
     }
-    .mostSlider{
+
+    .mostSlider {
       margin-top: -3%;
     }
-    .slick-slider {
-       .slick-prev {
-         width: 25px !important;
-         height: 25px;
-         left: 79%;
-         margin-top: 88%;
-       }
 
-       .slick-next {
-         width: 25px !important;
-         height: 25px;
-         margin-top: 88%;
-         right: 0;
-       }
-     }
+    .slick-slider {
+      .slick-prev {
+        width: 25px !important;
+        height: 25px;
+        left: 79%;
+        margin-top: 88%;
+      }
+
+      .slick-next {
+        width: 25px !important;
+        height: 25px;
+        margin-top: 88%;
+        right: 0;
+      }
+    }
   }
 }
 
 
 @media (max-width: 425px) {
-  #most-read{
-    & a{
+  #most-read {
+    & a {
       margin-right: 25%;
       margin-top: -8%;
     }
+
     .slick-slider {
       .slick-prev {
 
         left: 77%;
         margin-top: 123%;
       }
+
       .slick-next {
 
         margin-top: 123%;
@@ -278,8 +287,9 @@
     }
   }
 }
+
 @media (max-width: 425px) {
-  #most-read{
+  #most-read {
     .slick-slider {
       .slick-prev {
         margin-top: 119.5%;
@@ -291,17 +301,20 @@
     }
   }
 }
+
 @media (max-width: 414px) {
   #most-read {
-    .linkMost1{
+    .linkMost1 {
       margin-left: 3%;
       display: flex;
       justify-content: start;
     }
+
     .mostRead {
       font-size: 24px;
       margin-top: 10px;
     }
+
     .slick-slider {
       .slick-prev {
         left: 75%;
@@ -312,6 +325,7 @@
         margin-top: 131%;
         right: 0;
       }
+
       .slick-list {
         .slick-track {
           .slick-slide {
@@ -345,10 +359,11 @@
 
 @media (max-width: 375px) {
   #most-read {
-    .linkMost1{
+    .linkMost1 {
       display: flex;
       justify-content: start;
     }
+
     .mostRead {
       font-size: 24px;
       margin: 0;
@@ -371,14 +386,16 @@
         left: 83%;
         margin-top: 145%;
       }
-      .slick-dots{
-        font-size: 0!important;
+
+      .slick-dots {
+        font-size: 0 !important;
       }
     }
   }
 }
+
 @media (max-width: 320px) {
-  #most-read{
+  #most-read {
     .slick-slider {
       .slick-prev {
         margin-top: 170%;

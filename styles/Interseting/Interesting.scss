@@ -1,7 +1,5 @@
 #most-read {
   background: #E0DEDE;
-
-  
     .interestingH2 {
       font-size: 30px;
       font-weight: 600;
@@ -62,7 +60,7 @@
 
                   &:hover {
                     cursor: pointer;
-                    color: crimson;
+                    color: #f39453;
                   }
                 }
 
@@ -70,7 +68,6 @@
                   display: flex;
                   align-items: center;
                   justify-content: space-between;
-                  margin-top: 20px;
 
                   .p1 {
                     padding: 5px 0;
@@ -107,7 +104,7 @@
 }
 
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   #most-read {
     .item {
       .card-img {
@@ -126,7 +123,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   #most-read {
 
 
@@ -163,7 +160,7 @@
   }
 }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   #most-read {
     .item {
       .card-img {
@@ -180,11 +177,9 @@
   }
 }
 
-@media (max-width: 425px) {
 
-}
 
-@media (max-width: 414px) {
+@media screen and (max-width: 414px) {
   #most-read {
     padding-bottom: 30px;
     .interestingH2 {
@@ -224,7 +219,7 @@
 }
 
 
-@media (max-width: 375px) {
+@media screen and (max-width: 375px) {
   #most-read {
 
     .interestingH2 {
@@ -246,11 +241,5 @@
         }
       }
     }
-  }
-}
-
-@media (max-width: 320px) {
-  #interesting{
-
   }
 }
