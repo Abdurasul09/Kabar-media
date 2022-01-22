@@ -34,11 +34,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/article/[id].js"
-    ],
-    "/interesting-posts": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/interesting-posts.js"
     ]
   },
   "ampFirstPages": []

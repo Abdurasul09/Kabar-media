@@ -17,7 +17,7 @@
     border: 1px solid #45495E;
     border-radius: 40px;
     transition: .3s ease;
-    margin-right: 12%;
+    margin-right: 20% !important;
     z-index: 999;
 
     &:hover {
@@ -40,6 +40,11 @@
     display: flex;
     justify-content: flex-end;
   }
+  .linkMost1{
+    a{
+      display: none;
+    }
+  }
 
   .slick-slider {
     overflow: hidden;
@@ -50,11 +55,12 @@
       font-size: 0;
       width: 30px !important;
       height: 30px;
-      left: 90%;
+      left: 85% !important;
       box-sizing: border-box;
       border-radius: 60px;
       z-index: 99;
       top: 16px;
+      margin: 0 !important;
     }
 
     .slick-next {
@@ -67,6 +73,9 @@
       box-sizing: border-box;
       border-radius: 60px;
       z-index: 99;
+
+      margin: 0 !important;
+      left:  95% !important;
     }
 
     .slick-list {
@@ -87,8 +96,8 @@
                 .blockImg{
                   height: 180px;
                   img {
-                    width: 100%;
-                    height: 100%;
+                    width: 100% !important;
+                    height: 100% !important;
                     object-fit: cover;
                   }
                   iframe {
@@ -236,6 +245,9 @@
     }
 
     .linkMost1 {
+      a{
+        display: block;
+      }
       width: 100%;
       position: relative;
       display: flex;
@@ -251,15 +263,15 @@
       .slick-prev {
         width: 25px !important;
         height: 25px;
-        left: 79%;
-        margin-top: 99%;
+        left: 75% !important;
+        margin-top: 99% !important;
       }
 
       .slick-next {
         width: 25px !important;
         height: 25px;
-        margin-top: 99%;
-        right: 0;
+        margin-top: 99% !important;
+        left: 90% !important;
       }
     }
   }
@@ -285,11 +297,11 @@
     .slick-slider {
       .slick-prev {
         left: 70%;
-        margin-top: 138%;
+        margin-top: 138% !important;
       }
 
       .slick-next {
-        margin-top: 138%;
+        margin-top: 138% !important;
         right: 0;
       }
 
@@ -313,17 +325,17 @@
 }
 
 
-@media (max-width: 390px) {
+@media (min-width: 390px) {
   #most-read {
     .slick-slider {
       .slick-prev {
         left: 69%;
-        margin-top: 146%;
+        margin-top: 146% !important;
       }
 
       .slick-next {
         left: 83%;
-        margin-top: 146%;
+        margin-top: 146% !important;
       }
 
       .slick-dots {
@@ -334,7 +346,7 @@
 }
 
 
-@media (max-width: 375px) {
+@media (min-width: 375px) {
   #most-read {
     .linkMost1 {
       display: flex;
@@ -354,13 +366,13 @@
 
     .slick-slider {
       .slick-prev {
-        left: 69%;
-        margin-top: 152%;
+        left: 69% !important;
+        margin-top: 152% !important;
       }
 
       .slick-next {
-        left: 83%;
-        margin-top: 152%;
+        left: 83% !important;
+        margin-top: 152% !important;
       }
 
       .slick-dots {
@@ -370,15 +382,17 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) {
   #most-read {
     .slick-slider {
       .slick-prev {
-        margin-top: 178%;
+        left: 65% !important;
+        margin-top: 179% !important;
       }
 
       .slick-next {
-        margin-top: 178%;
+        left: 80% !important;
+        margin-top: 179% !important;
       }
     }
   }
